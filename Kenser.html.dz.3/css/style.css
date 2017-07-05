@@ -1,0 +1,56 @@
+body{background:#eacece;}
+
+.menu{
+    color:#03f10f;
+    font-family:"Times New Roman",serif,Arial;
+    font-style:Italic;
+    font-weight:bold;
+    font-size:30px;
+}
+.hopis{
+    color:black;
+    font-size:18px;
+    font-weight:400;
+    background:#42896b;
+}
+#kratkotik{
+    color:#f0020a;
+    font-size:14px;
+    font-style:italic;
+    line-height:16px;
+}
+.podrotiki{
+   color:#7d1e8c;
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    text-align:left;
+    }
+.har{
+    color:#2cdff7;
+    font-size:30px;
+    font-weight:bolder;
+    line-height:40px;
+  }
+li{
+    list-style-image: url(../pic/kotik3.jpg);
+}
+input{
+    width:500px;
+    height:30px;
+}
+.form::-webkit-input-placeholder{
+    color:#005bef;
+    font-size:20px;
+    font-weight:bolder;
+}
+select{
+    color:#005bef;
+    font-size:20px;
+    font-weight:bolder;
+}
+.kotik{
+    border-color:red;
+    border-style:solid;
+    border-width:3px;
+}
