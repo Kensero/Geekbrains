@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Таблица</title>
+    <style>
+        td{
+            border:1px solid black;
+        }
+        .table{
+            width:500px;
+            height:200px;
+            border-spacing:0px;
+            border-collapse:collapse;
+        }
+        #a{
+            margin-left:auto;
+            margin-right:auto;
+            width:300px;
+            height:100px;
+            text-align:center;
+            border-spacing:0px;
+            border-collapse:collapse;
+        }
+        #table{
+            text-align:center;
+            width:300px;
+            height:200px;
+            border-spacing:0px;
+            border-collapse:collapse;
+        }
+    </style>
+</head>
+<body>
+    <table class="table">
+        <tr>
+            <td rowspan="3">1</td>
+            <td>2</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2" height="100">5</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>9</td>
+        </tr>
+    </table>
+<br>
+    <table class="table">
+        <tr>
+            <td colspan="2" width="150" height="25">1</td>
+            <td width="150">3</td>
+        </tr>
+        <tr>
+            <td width="150">4</td>
+            <td colspan="2" rowspan="2">
+                <table id="a">
+                    <tr>
+                        <td height="25">x1</td>
+                        <td rowspan="3">x2</td>
+                        <td rowspan="2">x3</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">x4</td>
+                    </tr>
+                    <tr>
+                        <td height="25">x9</td>
+                    </tr>
+
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td width="150">7</td>
+        </tr>
+    </table>
+<br>
+    <form method="post" id="myform"></form>
+    <table id="table">
+        <tr>
+            <td>Фамилия</td>
+            <td><label><input type="text" form="myform"></label></td>
+        </tr>
+        <tr>
+            <td>Имя</td>
+            <td><label><input type="text" form="myform"></label></td>
+        </tr>
+        <tr>
+            <td>Ваш пол</td>
+            <td>
+                <label><input type="radio" value="1" name="sex" form="myform">Мужской</label>
+                <br>
+                <label><input type="radio" value="2" name="sex" form="myform">Женский</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" name="Отправить"></td>
+        </tr>
+    </table>
+</body>
+</html>
