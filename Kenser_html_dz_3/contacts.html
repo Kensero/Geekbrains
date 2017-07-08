@@ -12,9 +12,11 @@
     <p>
         <b>Меню</b>
     </p>
-    <p><a class="menu" href="index.html">Главная</a></p>
-    <p><a class="menu" href="catalog.html">Каталог</a></p>
-    <p><a class="menu" href="contacts.html">Контакты</a></p>
+    <div class="menu">
+        <p><a href="index.html">Главная</a></p>
+        <p><a href="catalog.html">Каталог</a></p>
+        <p><a href="contacts.html">Контакты</a></p>
+    </div>
     <hr/>
     <h1>
         <b>Напишите нам. Пожалуйста.</b>
@@ -29,17 +31,20 @@
             <input type="text" size="40" placeholder="Ваша тема" class="form">
             <br>
             <textarea cols="30" placeholder="Какой то ваш текст" class="form"></textarea>
-            <br>Как сильно любите котиков
+            <br>
+            <label>Как сильно любите котиков
             <select>
                 <option value="t1">Люблю котиков</option>
                 <option value="t2">Сильно люблю котиков</option>
                 <option value="t3">Очень сильно люблю котиков</option>
             </select>
+            </label>
                 <br>
-                Что предпочитаете у котиков
-            <input type="radio" name="kotik" value="kotik1">Уши
-            <input type="radio" name="kotik" value="kotik2">Хвост
-            <input type="radio" name="kotik" value="kotik3">Лапы
+            <label>Что предпочитаете у котиков
+                <label>Уши<input type="radio" name="kotik" value="kotik1" checked></label>
+                <label>Хвост<input type="radio" name="kotik" value="kotik2"></label>
+                <label>Лапы<input type="radio" name="kotik" value="kotik3"></label>
+            </label>
                 <br>
             <input type="submit" value="сохранить">
                 <br>
