@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <title>Таблица</title>
     <style>
-        td {
+        td:not([id="sex"]){
             border:1px solid black;
         }
         .table {
-            width:500px;
-            height:200px;
-            border-spacing:0px;
-            border-collapse:collapse;
+            width: 500px;
+            height: 200px;
+            border-collapse: collapse;
         }
         #a {
-            margin-left:auto;
-            margin-right:auto;
-            width:300px;
-            height:100px;
-            text-align:center;
-            border-spacing:0px;
-            border-collapse:collapse;
+            margin-left: auto;
+            margin-right: auto;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            border-collapse: collapse;
         }
         #table {
-            text-align:center;
-            width:300px;
-            height:200px;
-            border-spacing:0px;
-            border-collapse:collapse;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            border-collapse: collapse;
         }
+        #sex tr td {border: 1px solid white;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto}
     </style>
 </head>
 <body>
@@ -89,9 +90,10 @@
         <tr>
             <td>Ваш пол</td>
             <td>
-                <label><input type="radio" value="1" name="sex" form="myform">Мужской</label>
-                <br>
-                <label><input type="radio" value="2" name="sex" form="myform">Женский</label>
+                <table id="sex">
+                    <tr><td><label><input type="radio" value="1" name="sex" form="myform" checked>Мужской</label></td></tr>
+                    <tr><td><label><input type="radio" value="2" name="sex" form="myform">Женский</label></td></tr>
+                </table>
             </td>
         </tr>
         <tr>
