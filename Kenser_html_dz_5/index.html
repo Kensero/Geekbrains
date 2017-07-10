@@ -4,81 +4,102 @@
     <meta charset="UTF-8">
     <title>Blocks</title>
     <style type="text/css">
-        div:not([id="divthree"]){border: 1px solid black;}
         #divone {
             display: inline-block;
-            width: 500px;
-            height: 500px;
+            width: 200px;
+            height: 200px;
             z-index: 2;
             position: relative;
-
+            border: 1px solid black;
         }
         #divtwo {
-            width: 55%;
-            height: 500px;
+            width: 350px;
+            height: 200px;
             Display: inline-block;
-            float: right;
+            float: left;
             background-color: lightgray;
-            margin-right: 15%;
+            border: 1px solid black;
             z-index: 2;
-            position: relative;
-
+            position: absolute;
+            margin-left: 20px;
         }
         #divthree div {
-            width: 250px;
-            height: 350px;
-            display: inline-block;
-            float: right;
-            margin-right: 2%;
-            position: relative;
-            right: 32%;
-            bottom: 150px;
+            width: 100px;
+            height: 130px;
+            display: inline;
+            position: absolute;
             background-color: blue;
+            border: 1px solid black;
+
         }
-        #zstyletwo { z-index: 3;position: relative;}
-        .zstyleone { z-index: 1;position: relative;}
+        #zstyletwo {
+            z-index: 1;
+            width: 100px;
+            height: 130px;
+            display: inline;
+            position: absolute;
+            background-color: blue;
+            border: 1px solid black;
+            top: 125px;
+            left: 170px;
+        }
+        #zstyleone {
+            z-index: 1;
+            width: 100px;
+            height: 130px;
+            display: inline;
+            position: absolute;
+            background-color: blue;
+            border: 1px solid black;
+            top: 125px;
+            left: 450px;
+        }
+        #zstylethree {
+            z-index: 3;
+            width: 100px;
+            height: 130px;
+            display: inline;
+            position: absolute;
+            background-color: blue;
+            border: 1px solid black;
+            top: 125px;
+            left: 310px;
+        }
         #indivone {
+            position: absolute;
             width: 80%;
             height: 70%;
+            top: 15%;
+            left: 10%;
             background-color: red;
-            margin:0 auto;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
         }
-        #quarterone{background-color: green;}
-        #quartertwo{background-color: white;}
-        #quarterthree{background-color: black;}
-        #quarterfour{background-color: brown;}
-        table {
-            border: 1px solid black;
-            width: 100%; height: 100%;
-            border-collapse: collapse;
+        .quarters {
+            height: 50%;
+            width: 50%;
+            float: left;
         }
-        td{border: 1px solid black;}
+        #quarterone{background-color: green; position:relative;}
+        #quartertwo{background-color: white; position:relative;}
+        #quarterthree{background-color: black; position:relative;}
+        #quarterfour{background-color: brown; position:relative;}
+
     </style>
 </head>
 <body>
     <div id="divone">
-        <table>
-            <tr>
-                <td id="quarterone"></td>
-                <td id="quartertwo"></td>
-            </tr>
-            <tr>
-                <td id="quarterthree"></td>
-                <td id="quarterfour"></td>
-            </tr>
-        </table>
+        <div class="quarters" id="quarterone"></div>
+        <div class="quarters" id="quartertwo"></div>
+        <div class="quarters" id="quarterthree"></div>
+        <div class="quarters" id="quarterfour"></div>
     </div>
     <div id="divtwo">
         <div id="indivone"></div>
     </div>
-    <div id="divthree">
-        <div class="zstyleone"></div>
+
+        <div id="zstyleone"></div>
         <div id="zstyletwo"></div>
-        <div class="zstyleone"></div>
-    </div>
-    
+        <div id="zstylethree"></div>
+
+
 </body>
 </html>
