@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blocks</title>
+    <style type="text/css">
+        div:not([id="divthree"]){border: 1px solid black;}
+        #divone {
+            display: inline-block;
+            width: 500px;
+            height: 500px;
+            z-index: 2;
+            position: relative;
+
+        }
+        #divtwo {
+            width: 55%;
+            height: 500px;
+            Display: inline-block;
+            float: right;
+            background-color: lightgray;
+            margin-right: 15%;
+            z-index: 2;
+            position: relative;
+
+        }
+        #divthree div {
+            width: 250px;
+            height: 350px;
+            display: inline-block;
+            float: right;
+            margin-right: 2%;
+            position: relative;
+            right: 32%;
+            bottom: 150px;
+            background-color: blue;
+        }
+        #zstyletwo { z-index: 3;position: relative;}
+        .zstyleone { z-index: 1;position: relative;}
+        #indivone {
+            width: 80%;
+            height: 70%;
+            background-color: red;
+            margin:0 auto;
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #quarterone{background-color: green;}
+        #quartertwo{background-color: white;}
+        #quarterthree{background-color: black;}
+        #quarterfour{background-color: brown;}
+        table {
+            border: 1px solid black;
+            width: 100%; height: 100%;
+            border-collapse: collapse;
+        }
+        td{border: 1px solid black;}
+    </style>
+</head>
+<body>
+    <div id="divone">
+        <table>
+            <tr>
+                <td id="quarterone"></td>
+                <td id="quartertwo"></td>
+            </tr>
+            <tr>
+                <td id="quarterthree"></td>
+                <td id="quarterfour"></td>
+            </tr>
+        </table>
+    </div>
+    <div id="divtwo">
+        <div id="indivone"></div>
+    </div>
+    <div id="divthree">
+        <div class="zstyleone"></div>
+        <div id="zstyletwo"></div>
+        <div class="zstyleone"></div>
+    </div>
+    
+</body>
+</html>
